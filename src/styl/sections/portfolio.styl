@@ -5,25 +5,43 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and (min-width 767px)
+            max-width: 980px;
+            height: 100vh;
+            align-items: flex-start;
     &__header
         width: 100%;
         color: #314584;
         text-align: start;
         font-size: 2.5rem;
         font-weight: 600;
+        @media screen and (min-width 767px)
+            font-size: 4rem;
+            max-width: 400px;
     &-blocks
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         position: relative;
+        @media screen and (min-width 767px)
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
         &__item
-            width: 370px;
-            height: 280px;
+            width: 310px;
+            height: 220px;
             background-color: #c3d0d8;
-            margin: 1rem;
+            margin-bottom: 3rem;
     &__more-link
-        margin-top: 2rem; 
+        margin-top: 2rem;
+        @media screen and (min-width 767px)
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
         & a
             color: #ff3946;
             font-weight: 600;

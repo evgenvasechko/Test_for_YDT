@@ -91,6 +91,17 @@ requireAll(__webpack_require__(5));
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
 window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
+window.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
+  let burgerButton = document.querySelector('.header-burger');
+  let mobileMenu = document.querySelector('.header-menu_mobile');
+  burgerButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle("show");
+  });
+}); // $(document).ready(function(){
+//     $('.hero__image').slick();
+// });
 
 /***/ }),
 /* 2 */
