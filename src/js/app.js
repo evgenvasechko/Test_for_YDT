@@ -11,9 +11,27 @@ window.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle("show");
     });
 
+    let picture = document.querySelectorAll(".picture");
+    console.log(picture);
+
+    
+
+
+
+    let slider = function(){
+        for(let i=0; i<=picture.length; i++){
+            if(window.screen.width < 480) {
+                break;
+            } else if(i+1 >= picture.length){
+                i = 0;
+            }
+            picture[i+1].classList.toggle("hidden");
+            picture[i].classList.toggle("hidden");
+            break;
+        };
+    };
+
+    setInterval(slider, 3000);
+
     
 });
-
-// $(document).ready(function(){
-//     $('.hero__image').slick();
-// });
